@@ -1,0 +1,42 @@
+{
+  "name": "dsh-coderef",
+  "version": "0.0.10",
+  "private": true,
+  "description": "DSH prototype plugin: turn **MyClass** / **foo.bar** bold text in assistant messages into clickable code references (Host symbol index + IDE jump route + Client assistant-step decoration).",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.1.5-rc.2"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib/**/*.js",
+    "cordis.patch.yml",
+    "dsh.plugin.json",
+    "README.md",
+    "test/**/*.mjs"
+  ],
+  "scripts": {
+    "test": "node test/smoke.mjs"
+  },
+  "license": "MIT"
+}
+
+
+
+

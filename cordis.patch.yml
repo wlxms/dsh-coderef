@@ -1,0 +1,12 @@
+# dsh-coderef bundle patch: inserts the dual-face plugin row into a web profile.
+#
+# Host half (exports "."):  symbol index + /coderef/resolve + /coderef/open
+# Client half (exports "./client"): shadows conversation.chat.node[assistant-step],
+# rewrites settled **X** into `X` for resolved symbols and supplies a fileMentions
+# resolver whose click opens the IDE (fallback: DSH right sidebar to line).
+#
+# This file is referenced by package.json dsh.bundle.patch so
+# `dsh plugin --profile web add <this dir>` adds it to the profile bundle stack.
+- insert:
+    - id: coderef
+      name: 'dsh-coderef'
