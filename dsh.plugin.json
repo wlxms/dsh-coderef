@@ -1,6 +1,6 @@
 {
   "id": "local/dsh-coderef",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "main": "./lib/index.js",
   "description": "原型：把助手消息里的 **Type** / **Type.member** 识别为代码引用，经 Host 符号索引解析为 file:line，渲染成可点击的引用；点击打开 IDE（失败回退 DSH 右侧栏到行）。",
   "engines": {
@@ -10,6 +10,7 @@
     "tools": []
   }
 }
+
 
 
 

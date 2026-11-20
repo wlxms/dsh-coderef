@@ -1,6 +1,6 @@
 {
   "name": "dsh-coderef",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "private": true,
   "description": "DSH prototype plugin: turn **MyClass** / **foo.bar** bold text in assistant messages into clickable code references (Host symbol index + IDE jump route + Client assistant-step decoration).",
   "type": "module",
@@ -36,6 +36,7 @@
   },
   "license": "MIT"
 }
+
 
 
 
